@@ -1,0 +1,123 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFCFD5"
+    tools:context=".MyTickets.MyTicketsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top bar -->
+        <LinearLayout
+            android:id="@+id/topPanel"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#356BB1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/back"
+                android:scaleType="centerInside"
+                android:padding="10dp"
+                app:srcCompat="@drawable/back" />
+        </LinearLayout>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/my_tickets"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <!-- RecyclerView and fallback -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ShowTicketsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/NoTickets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/there_are_no_tickets"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:padding="40dp" />
+        </FrameLayout>
+
+        <!-- Info text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/cancellation"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/ticketNote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/if_you_choose_to_return_the_tickets_the_money_will_be_deposited_in_your_virtual_wallet"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:textAlignment="viewStart" />
+        </LinearLayout>
+
+        <!-- ✅ Assistant Button Inside Scroll -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:paddingEnd="20dp"
+            android:layout_gravity="end"
+            tools:ignore="RtlSymmetry">
+
+            <ImageButton
+                android:id="@+id/chatbotButton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="end"
+                android:background="@drawable/assistant"
+                android:contentDescription="@string/chatbot"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/assistant" />
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
