@@ -9,7 +9,6 @@
     tools:context=".ChatBox.ChatActivity"
     android:background="#CFCFD5">
 
-    <!-- ✅ Top Toolbar -->
     <LinearLayout
         android:id="@+id/chatToolbar"
         android:layout_width="match_parent"
@@ -49,7 +48,6 @@
             android:layout_marginStart="10dp"/>
     </LinearLayout>
 
-    <!-- ✅ RecyclerView for chat -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chatRecyclerView"
         android:layout_width="0dp"
@@ -62,7 +60,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- ✅ Input Bar -->
     <LinearLayout
         android:id="@+id/inputBar"
         android:layout_width="0dp"

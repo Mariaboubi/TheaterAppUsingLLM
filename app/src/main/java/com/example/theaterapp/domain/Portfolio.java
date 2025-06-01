@@ -42,9 +42,4 @@ public class Portfolio implements Serializable
             balance = 0;
         }
     }
-
-    public void withdrawAllBalance()
-    {
-        balance = 0;
-    }
 }

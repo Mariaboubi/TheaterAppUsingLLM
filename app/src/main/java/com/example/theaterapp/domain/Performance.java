@@ -62,32 +62,6 @@ public class Performance
         return performanceDays;
     }
 
-    public String toStringPerformanceDays()
-    {
-        return String.join(", ", performanceDays);
-    }
-
-    public String toStringPerformance()
-    {
-        return "Performance Name: " + name + "\n" +
-               "    Performance Type: " + performanceType + "\n" +
-               "    Duration: " + performanceTime + "\n" +
-               "    Performance Plot: " + performancePlot + "\n" +
-               "    Performance Days: " + toStringPerformanceDays() + "\n" +
-               "    Price: " + price + "\n" +
-               "    Theater Room : " + roomID + "\n";
-    }
-
-    public String toStringInfo()
-    {
-        return
-                "Type: " + performanceType + "\n" +
-                "Duration: " + performanceTime + "\n" +
-                "Days: " + toStringPerformanceDays() + "\n" +
-                        "18:00 and 21:00"+ "\n" +
-                "Theater Room : " + roomID + "\n";
-    }
-
     public String getPerformanceType()
     {
         return performanceType;
@@ -116,26 +90,6 @@ public class Performance
     public void setPrice(int price)
     {
         this.price = price;
-    }
-
-    public void setPerformanceDays(HashSet<String> performanceDays)
-    {
-        this.performanceDays = performanceDays;
-    }
-
-    public void setPerformanceType(String performanceType)
-    {
-        this.performanceType = performanceType;
-    }
-
-    public void setPerformanceTime(String performanceTime)
-    {
-        this.performanceTime = performanceTime;
-    }
-
-    public void setPerformancePlot(String performancePlot)
-    {
-        this.performancePlot = performancePlot;
     }
 
     public String getPerformancePlot()

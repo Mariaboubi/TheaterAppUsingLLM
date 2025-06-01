@@ -9,9 +9,6 @@
     android:background="#BDBFC6"
     android:padding="5dp">
 
-    <!-- Performance Photo -->
-
-    <!-- Performance Name -->
     <ImageView
         android:id="@+id/PerPhoto"
         android:layout_width="167dp"

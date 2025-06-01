@@ -105,7 +105,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- Fixed Chatbot Assistant Button -->
     <ImageButton
 
         android:id="@+id/chatbotButton"

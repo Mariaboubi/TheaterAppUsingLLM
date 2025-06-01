@@ -56,8 +56,6 @@ public abstract class Initializer {
         PortofolioDAO portofolioDAO =getPortofolioDAO();
         portofolioDAO.save(portfolio);
 
-        //Initialize Tickets
-//        createTicketsFromJson();
     }
 
     public abstract PerformanceDAO getPerformanceDAO();
