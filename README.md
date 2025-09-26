@@ -1,3 +1,5 @@
+# 🎭 TheaterAppUsingLLM
+
 **TheaterAppUsingLLM** is a demo Android application that simulates how a modern theatre could interact with its audience through a friendly chat-based assistant.
 Instead of long menus or complicated navigation, users can simply write in natural language (Greek or English) to the app, just like talking to the box office clerk.
 
